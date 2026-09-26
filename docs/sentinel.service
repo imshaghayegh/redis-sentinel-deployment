@@ -1,0 +1,18 @@
+/etc/systemd/system/sentinel.service
+
+[Unit]
+Description=Redis Sentinel
+After=network.target redis.service
+
+[Service]
+
+User=redis
+Group=redis
+
+ExecStart=/usr/local/bin/redis-sentinel /etc/redis/sentinel.conf
+
+Restart=always
+
+[Install]
+
+WantedBy=multi-user.target
