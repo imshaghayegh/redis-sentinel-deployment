@@ -29,7 +29,6 @@ Required ports:
 | Redis | 6379 |
 | Sentinel | 26379 |
 
-# Installation
 
 ## Download Redis Package
 
